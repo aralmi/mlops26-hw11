@@ -1,0 +1,6 @@
+warmupSeconds: 12
+hitWork: 160000
+missWork: 380000
+chunkWork: 220000
+hpa:
+  enabled: true

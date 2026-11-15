@@ -1,0 +1,123 @@
+{{- $artifact := .Values.artifactVersion | default .Values.modelVersion }}
+{{- $path := printf "model-%s.json" $artifact }}
+{{- $blob := required "missing model artifact" (.Files.Get $path) }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hw11-config-{{ $blob | sha256sum | trunc 12 }}
+  annotations:
+    helm.sh/resource-policy: keep
+immutable: true
+data:
+  model.json: |
+{{ $blob | trimSuffix "\n" | indent 4 }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hw11-api
+spec:
+  {{- if not .Values.hpa.enabled }}
+  replicas: {{ .Values.replicas }}
+  {{- end }}
+  revisionHistoryLimit: 4
+  progressDeadlineSeconds: 110
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  selector:
+    matchLabels: {app: hw11-api}
+  template:
+    metadata:
+      labels: {app: hw11-api}
+    spec:
+      automountServiceAccountToken: false
+      terminationGracePeriodSeconds: {{ .Values.graceSeconds }}
+      securityContext:
+        runAsNonRoot: true
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+      - name: api
+        image: {{ .Values.image | quote }}
+        imagePullPolicy: Never
+        ports: [{name: http, containerPort: 8080}]
+        env:
+        - name: POD_NAME
+          valueFrom: {fieldRef: {fieldPath: metadata.name}}
+        - {name: ARTIFACT, value: /model/model.json}
+        - {name: MODEL_VERSION, value: {{ .Values.modelVersion | quote }}}
+        - {name: MODEL_SHA256, value: {{ printf "%s\n" ($blob | trimSuffix "\n") | sha256sum | quote }}}
+        - {name: WARMUP_SECONDS, value: {{ .Values.warmupSeconds | quote }}}
+        - {name: PROBE_MODE, value: {{ .Values.probeMode | quote }}}
+        - {name: RUNNING_LIMIT, value: {{ .Values.runningLimit | quote }}}
+        - {name: INFLIGHT_LIMIT, value: {{ .Values.inflightLimit | quote }}}
+        - {name: CACHE_SIZE, value: {{ .Values.cacheSize | quote }}}
+        - {name: HIT_WORK, value: {{ .Values.hitWork | quote }}}
+        - {name: MISS_WORK, value: {{ .Values.missWork | quote }}}
+        - {name: CHUNK_WORK, value: {{ .Values.chunkWork | quote }}}
+        volumeMounts:
+        - {name: artifact, mountPath: /model, readOnly: true}
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities: {drop: ["ALL"]}
+        startupProbe:
+          httpGet: {path: /startup, port: http}
+          periodSeconds: 1
+          timeoutSeconds: 1
+          failureThreshold: 60
+        readinessProbe:
+          httpGet: {path: /ready, port: http}
+          periodSeconds: 1
+          timeoutSeconds: 1
+          failureThreshold: 1
+        livenessProbe:
+          httpGet: {path: /health, port: http}
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 3
+        lifecycle:
+          preStop:
+            exec:
+              command: ["/bin/sleep", {{ .Values.preStopSeconds | quote }}]
+        resources:
+{{ toYaml .Values.resources | indent 10 }}
+      volumes:
+      - name: artifact
+        configMap: {name: hw11-config-{{ $blob | sha256sum | trunc 12 }}}
+---
+{{- range $name, $affinity := dict "plain" "None" "sticky" "ClientIP" }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: hw11-{{ $name }}
+spec:
+  selector: {app: hw11-api}
+  ports: [{name: http, port: 8080, targetPort: http}]
+  sessionAffinity: {{ $affinity }}
+  {{- if eq $affinity "ClientIP" }}
+  sessionAffinityConfig:
+    clientIP: {timeoutSeconds: 10800}
+  {{- end }}
+---
+{{- end }}
+{{- if .Values.hpa.enabled }}
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: hw11-api
+spec:
+  scaleTargetRef: {apiVersion: apps/v1, kind: Deployment, name: hw11-api}
+  minReplicas: 2
+  maxReplicas: 3
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target: {type: Utilization, averageUtilization: {{ .Values.hpa.targetCPU }}}
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: {{ .Values.hpa.downWindowSeconds }}
+{{- end }}

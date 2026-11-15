@@ -1,0 +1,130 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: hw11-observer
+  namespace: hw11
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: hw11-observer
+  namespace: hw11
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: hw11-observer
+  namespace: hw11
+subjects:
+- kind: ServiceAccount
+  name: hw11-observer
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: hw11-observer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: hw11-prometheus, namespace: hw11}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: hw11-prometheus}}
+  template:
+    metadata: {labels: {app: hw11-prometheus}}
+    spec:
+      serviceAccountName: hw11-observer
+      securityContext: {fsGroup: 65534}
+      containers:
+      - name: prometheus
+        image: prom/prometheus:v3.5.0
+        imagePullPolicy: Never
+        args: ['--config.file=/etc/prometheus/prometheus.yml', '--storage.tsdb.path=/prometheus', '--storage.tsdb.retention.time=24h', '--storage.tsdb.retention.size=256MB']
+        ports: [{containerPort: 9090}]
+        resources:
+          requests: {cpu: 60m, memory: 96Mi}
+          limits: {cpu: 350m, memory: 384Mi}
+        volumeMounts: [{name: config, mountPath: /etc/prometheus, readOnly: true}, {name: data, mountPath: /prometheus}]
+      volumes:
+      - {name: config, configMap: {name: hw11-prom-config}}
+      - {name: data, emptyDir: {sizeLimit: 320Mi}}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: hw11-prometheus, namespace: hw11}
+spec:
+  selector: {app: hw11-prometheus}
+  ports: [{port: 9090, targetPort: 9090}]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: hw11-grafana, namespace: hw11}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: hw11-grafana}}
+  template:
+    metadata: {labels: {app: hw11-grafana}}
+    spec:
+      automountServiceAccountToken: false
+      securityContext: {fsGroup: 472}
+      containers:
+      - name: grafana
+        image: grafana/grafana:12.1.1
+        imagePullPolicy: Never
+        env:
+        - {name: GF_AUTH_ANONYMOUS_ENABLED, value: "true"}
+        - {name: GF_AUTH_ANONYMOUS_ORG_ROLE, value: "Viewer"}
+        - {name: GF_AUTH_DISABLE_LOGIN_FORM, value: "true"}
+        - {name: GF_ANALYTICS_REPORTING_ENABLED, value: "false"}
+        - {name: GF_ANALYTICS_CHECK_FOR_UPDATES, value: "false"}
+        ports: [{containerPort: 3000}]
+        resources:
+          requests: {cpu: 60m, memory: 96Mi}
+          limits: {cpu: 400m, memory: 384Mi}
+        volumeMounts:
+        - {name: data, mountPath: /var/lib/grafana}
+        - {name: datasource, mountPath: /etc/grafana/provisioning/datasources, readOnly: true}
+        - {name: provider, mountPath: /etc/grafana/provisioning/dashboards, readOnly: true}
+        - {name: dashboard, mountPath: /opt/dashboards, readOnly: true}
+      volumes:
+      - {name: data, emptyDir: {sizeLimit: 160Mi}}
+      - {name: datasource, configMap: {name: hw11-grafana-datasource}}
+      - {name: provider, configMap: {name: hw11-grafana-provider}}
+      - {name: dashboard, configMap: {name: hw11-dashboard}}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: hw11-grafana, namespace: hw11}
+spec:
+  selector: {app: hw11-grafana}
+  ports: [{port: 3000, targetPort: 3000}]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: hw11-kube-state, namespace: hw11}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: hw11-kube-state}}
+  template:
+    metadata: {labels: {app: hw11-kube-state}}
+    spec:
+      serviceAccountName: hw11-observer
+      containers:
+      - name: kube-state-metrics
+        image: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.17.0
+        imagePullPolicy: Never
+        args: ['--resources=pods', '--namespaces=hw11']
+        ports: [{containerPort: 8080}]
+        resources:
+          requests: {cpu: 20m, memory: 24Mi}
+          limits: {cpu: 150m, memory: 96Mi}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: hw11-kube-state, namespace: hw11}
+spec:
+  selector: {app: hw11-kube-state}
+  ports: [{port: 8080, targetPort: 8080}]

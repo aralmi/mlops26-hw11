@@ -1,0 +1,6 @@
+apiVersion: v2
+name: hw11-api
+description: Streaming API with bounded CPU inference simulation
+type: application
+version: 1.0.0
+appVersion: "1.0.0"

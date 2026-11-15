@@ -1,0 +1,21 @@
+replicas: 2
+image: hw11-api:1.0.0
+modelVersion: A
+artifactVersion: ""
+warmupSeconds: 20
+probeMode: fixed
+preStopSeconds: 4
+graceSeconds: 35
+cacheSize: 16
+runningLimit: 1
+inflightLimit: 9
+hitWork: 50000
+missWork: 180000
+chunkWork: 90000
+resources:
+  requests: {cpu: 100m, memory: 64Mi}
+  limits: {cpu: 800m, memory: 128Mi}
+hpa:
+  enabled: false
+  targetCPU: 50
+  downWindowSeconds: 60
