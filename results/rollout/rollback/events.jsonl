@@ -1,0 +1,3 @@
+{"event": "invalid_B", "unix": 1794753738.53235, "previous_deployment_revision": "21", "rollback_to": 11}
+{"event": "helm_rollback", "unix": 1794753749.487765, "revision": 11}
+{"event": "rollback_ready", "unix": 1794753751.717367}

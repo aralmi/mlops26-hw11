@@ -1,0 +1,10 @@
+{
+  "run": "plain-uniform-1",
+  "outcome": {
+    "ok": 900
+  },
+  "by_pod": {
+    "hw11-api-556d584596-v5p9w": 461,
+    "hw11-api-556d584596-54wgk": 439
+  }
+}

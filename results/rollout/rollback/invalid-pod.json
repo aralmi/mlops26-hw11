@@ -1,0 +1,12 @@
+{
+  "pod": "hw11-api-7df7c6b556-sm8vr",
+  "ip": "10.244.0.54",
+  "uid": "1805ba1e-35d9-42aa-a293-d413bcdf6e5e",
+  "created": "2026-11-15T14:42:18Z",
+  "deleting": null,
+  "phase": "Running",
+  "ready": false,
+  "ready_transition": "2026-11-15T14:42:18Z",
+  "restarts": 0,
+  "requested_version": "B"
+}

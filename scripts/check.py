@@ -48,9 +48,11 @@ class KubernetesAcceptance(unittest.TestCase):
         self.assertLess(initial["sent_unix"], update)
         self.assertGreater(initial["end_unix"], update)
         self.assertTrue(all(row["done"] and row["outcome"] == "ok" and row["version"] == "A" for row in streams))
-        self.assertTrue(any(sample["unix"] < row["end_unix"] and any(
-            endpoint["pod"] == row["pod"] and endpoint.get("terminating") and not endpoint["ready"]
-            for endpoint in sample["endpoints"]) for sample in trace for row in streams))
+        self.assertTrue(any(
+            row["sent_unix"] < sample["unix"] < row["end_unix"] and any(
+                pod["pod"] == row["pod"] and pod["deleting"] for pod in sample["pods"])
+            and all(not endpoint["ready"] for endpoint in sample["endpoints"] if endpoint["pod"] == row["pod"])
+            for sample in trace for row in streams))
 
     def test_2_invalid_b_and_actual_rollback_version(self):
         direct = read("rollback/direct-B.json")

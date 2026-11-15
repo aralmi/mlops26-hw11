@@ -1,0 +1,3 @@
+3.6G	/var/lib/containerd
+125M	/var/lib/etcd
+53M	/var/lib/kubelet

@@ -1,0 +1,6 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+{"event": "process_started", "unix": 1794753739.7305386, "pod": "hw11-api-7df7c6b556-sm8vr", "requested_version": "B"}
+{"event": "load_failed", "unix": 1794753739.730633, "pod": "hw11-api-7df7c6b556-sm8vr", "requested_version": "B", "error": "artifact SHA-256 or version mismatch"}
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)

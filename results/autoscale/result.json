@@ -1,0 +1,8 @@
+{
+  "max_ready": 3,
+  "fired": [
+    "Hw11HighRejectionRate",
+    "Hw11HighTTFC"
+  ],
+  "successful_requests": 579
+}

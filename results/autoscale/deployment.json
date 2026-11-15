@@ -1,0 +1,234 @@
+{
+  "apiVersion": "apps/v1",
+  "kind": "Deployment",
+  "metadata": {
+    "annotations": {
+      "deployment.kubernetes.io/revision": "24",
+      "meta.helm.sh/release-name": "hw11",
+      "meta.helm.sh/release-namespace": "hw11"
+    },
+    "creationTimestamp": "2026-11-15T14:01:07Z",
+    "generation": 25,
+    "labels": {
+      "app.kubernetes.io/managed-by": "Helm"
+    },
+    "name": "hw11-api",
+    "namespace": "hw11",
+    "resourceVersion": "6866",
+    "uid": "a7885741-c3d0-4c1d-8e26-3bb746bc3725"
+  },
+  "spec": {
+    "progressDeadlineSeconds": 110,
+    "replicas": 2,
+    "revisionHistoryLimit": 4,
+    "selector": {
+      "matchLabels": {
+        "app": "hw11-api"
+      }
+    },
+    "strategy": {
+      "rollingUpdate": {
+        "maxSurge": 1,
+        "maxUnavailable": 0
+      },
+      "type": "RollingUpdate"
+    },
+    "template": {
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/restartedAt": "2026-11-15T17:31:14+03:00"
+        },
+        "labels": {
+          "app": "hw11-api"
+        }
+      },
+      "spec": {
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "POD_NAME",
+                "valueFrom": {
+                  "fieldRef": {
+                    "apiVersion": "v1",
+                    "fieldPath": "metadata.name"
+                  }
+                }
+              },
+              {
+                "name": "ARTIFACT",
+                "value": "/model/model.json"
+              },
+              {
+                "name": "MODEL_VERSION",
+                "value": "A"
+              },
+              {
+                "name": "MODEL_SHA256",
+                "value": "bc9e5a435324847a23d081cbe6cfe37e2cef86a4e7e05f1e97f27a8649a416cc"
+              },
+              {
+                "name": "WARMUP_SECONDS",
+                "value": "12"
+              },
+              {
+                "name": "PROBE_MODE",
+                "value": "fixed"
+              },
+              {
+                "name": "RUNNING_LIMIT",
+                "value": "1"
+              },
+              {
+                "name": "INFLIGHT_LIMIT",
+                "value": "9"
+              },
+              {
+                "name": "CACHE_SIZE",
+                "value": "16"
+              },
+              {
+                "name": "HIT_WORK",
+                "value": "160000"
+              },
+              {
+                "name": "MISS_WORK",
+                "value": "380000"
+              },
+              {
+                "name": "CHUNK_WORK",
+                "value": "220000"
+              }
+            ],
+            "image": "hw11-api:1.0.0",
+            "imagePullPolicy": "Never",
+            "lifecycle": {
+              "preStop": {
+                "exec": {
+                  "command": [
+                    "/bin/sleep",
+                    "4"
+                  ]
+                }
+              }
+            },
+            "livenessProbe": {
+              "failureThreshold": 3,
+              "httpGet": {
+                "path": "/health",
+                "port": "http",
+                "scheme": "HTTP"
+              },
+              "periodSeconds": 5,
+              "successThreshold": 1,
+              "timeoutSeconds": 2
+            },
+            "name": "api",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http",
+                "protocol": "TCP"
+              }
+            ],
+            "readinessProbe": {
+              "failureThreshold": 1,
+              "httpGet": {
+                "path": "/ready",
+                "port": "http",
+                "scheme": "HTTP"
+              },
+              "periodSeconds": 1,
+              "successThreshold": 1,
+              "timeoutSeconds": 1
+            },
+            "resources": {
+              "limits": {
+                "cpu": "800m",
+                "memory": "128Mi"
+              },
+              "requests": {
+                "cpu": "100m",
+                "memory": "64Mi"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              },
+              "readOnlyRootFilesystem": true
+            },
+            "startupProbe": {
+              "failureThreshold": 60,
+              "httpGet": {
+                "path": "/startup",
+                "port": "http",
+                "scheme": "HTTP"
+              },
+              "periodSeconds": 1,
+              "successThreshold": 1,
+              "timeoutSeconds": 1
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/model",
+                "name": "artifact",
+                "readOnly": true
+              }
+            ]
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "restartPolicy": "Always",
+        "schedulerName": "default-scheduler",
+        "securityContext": {
+          "runAsNonRoot": true,
+          "seccompProfile": {
+            "type": "RuntimeDefault"
+          }
+        },
+        "terminationGracePeriodSeconds": 35,
+        "volumes": [
+          {
+            "configMap": {
+              "defaultMode": 420,
+              "name": "hw11-config-bc9e5a435324"
+            },
+            "name": "artifact"
+          }
+        ]
+      }
+    }
+  },
+  "status": {
+    "availableReplicas": 2,
+    "conditions": [
+      {
+        "lastTransitionTime": "2026-11-15T14:39:34Z",
+        "lastUpdateTime": "2026-11-15T14:43:47Z",
+        "message": "ReplicaSet \"hw11-api-5f887645ff\" has successfully progressed.",
+        "reason": "NewReplicaSetAvailable",
+        "status": "True",
+        "type": "Progressing"
+      },
+      {
+        "lastTransitionTime": "2026-11-15T14:44:02Z",
+        "lastUpdateTime": "2026-11-15T14:44:02Z",
+        "message": "Deployment has minimum availability.",
+        "reason": "MinimumReplicasAvailable",
+        "status": "True",
+        "type": "Available"
+      }
+    ],
+    "observedGeneration": 25,
+    "readyReplicas": 2,
+    "replicas": 2,
+    "updatedReplicas": 2
+  }
+}

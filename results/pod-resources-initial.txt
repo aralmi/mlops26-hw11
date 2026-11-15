@@ -1,0 +1,10 @@
+NAME                               CPU(cores)   MEMORY(bytes)   
+hw11-api-556d584596-54wgk          293m         35Mi            
+hw11-api-556d584596-v5p9w          367m         35Mi            
+hw11-client-0                      2m           19Mi            
+hw11-client-1                      2m           19Mi            
+hw11-client-2                      2m           19Mi            
+hw11-client-3                      2m           19Mi            
+hw11-grafana-67cccf8898-wz26f      4m           99Mi            
+hw11-kube-state-74876cd96b-qfqzq   1m           13Mi            
+hw11-prometheus-5c66cf594c-p7l5b   1m           26Mi            

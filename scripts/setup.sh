@@ -21,7 +21,7 @@ while read -r tag digest; do
     kind load docker-image --name "$cluster" "$tag"
 done < monitoring/images.lock
 helm lint chart
-helm upgrade --install hw11 chart --namespace hw11 --wait --timeout 110s
+helm upgrade --install hw11 chart --namespace hw11 --reset-values --wait --timeout 110s
 kubectl apply -f monitoring/clients.yaml
 kubectl wait --namespace hw11 pod -l app=hw11-client --for=condition=Ready --timeout=80s
 sh scripts/monitoring.sh

@@ -89,7 +89,7 @@ def state():
 
 
 def helm(*values, wait=False):
-    args = ["helm", "upgrade", "--install", "hw11", "chart", "-n", NS]
+    args = ["helm", "upgrade", "--install", "hw11", "chart", "-n", NS, "--reset-values"]
     args.extend(values)
     if wait:
         args.extend(["--wait", "--timeout", "105s"])
@@ -113,7 +113,6 @@ def parallel_load(folder, run, policy, traffic, duration, rate, chunks=4, pace=2
                        "--run", run, "--start", str(start), "--duration", str(duration),
                        "--rate", str(rate), "--traffic", traffic, "--client", str(index),
                        "--chunks", str(chunks), "--pace", str(pace)), timeout=duration+80)
-        (folder / f"client-{index}.jsonl").write_text(output.stdout)
         if output.stderr:
             (folder / f"client-{index}.stderr").write_text(output.stderr)
         return lines(output.stdout)

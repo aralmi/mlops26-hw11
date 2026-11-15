@@ -1,0 +1,10 @@
+{
+  "warming_503": 35,
+  "http_5xx": 35,
+  "aborted_or_timeout": 0,
+  "versions": [
+    "A",
+    "B"
+  ],
+  "processed": 126
+}

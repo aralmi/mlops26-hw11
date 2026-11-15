@@ -54,7 +54,12 @@ def last_record(process):
 def warmup_trial(mode):
     folder = ROOT / mode
     helm("--set", f"probeMode={mode}", wait=True)
-    before = pod_rows()
+    before = [pod for pod in pod_rows() if pod["ready"] and not pod["deleting"]]
+    assert len(before) == 2
+    if mode == "broken":
+        # The deliberately broken Kubernetes probe is not evidence that A finished warming.
+        for pod in before:
+            wait_until(lambda: '"event": "backend_ready"' in cmd("logs", pod["pod"], check=False), 35)
     with watch(folder), concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
         future = pool.submit(parallel_load, folder, mode, "plain", "uniform", 63, 2)
         wait_until(lambda: (folder / "schedule.json").is_file(), 10)
@@ -62,13 +67,13 @@ def warmup_trial(mode):
         old = {p["pod"] for p in before if p["ready"] and not p["deleting"]}
         probes = []
         if mode == "fixed":
-            active = single("fixed-long", background=True, max_new_tokens=24, pace_ms=650)
+            active = single("fixed-long", background=True, max_new_tokens=12, pace_ms=550)
             event(folder, "long_first", **{k: v for k, v in first_fragment(active).items() if k != "event"})
         event(folder, "upgrade_A_to_B")
         helm("--set", f"probeMode={mode}", "--set", "modelVersion=B")
         if mode == "fixed":
             # Start more streams toward A in the second half of B's warmup to observe drain.
-            time.sleep(11)
+            time.sleep(12)
             for index, pod in enumerate(p for p in before if p["pod"] in old):
                 proc = single(f"late-A-{index}", background=True, max_new_tokens=24, pace_ms=650,
                               url=f"http://{pod['ip']}:8080/generate", client=index)
@@ -93,7 +98,8 @@ def warmup_trial(mode):
 
 def bad_release():
     folder = ROOT / "rollback"
-    helm(wait=True)
+    helm("--set", "modelVersion=A", wait=True)
+    existing_uids = {p["uid"] for p in pod_rows()}
     revision = json.loads(cmd("get", "deploy/hw11-api", "-o", "json"))["metadata"]["annotations"]["deployment.kubernetes.io/revision"]
     from cluster import shell
     history = json.loads(shell("helm", "history", "hw11", "-n", "hw11", "-o", "json").stdout)
@@ -105,7 +111,8 @@ def bad_release():
         event(folder, "invalid_B", previous_deployment_revision=revision, rollback_to=release_revision)
         helm("--set", "modelVersion=B", "--set", "artifactVersion=A")
         def bad_pod():
-            return next((p for p in pod_rows() if p["requested_version"] == "B" and p["ip"]), None)
+            return next((p for p in pod_rows() if p["requested_version"] == "B" and p["ip"]
+                         and p["uid"] not in existing_uids and not p["deleting"]), None)
         bad = wait_until(bad_pod, 25)
         failure_log = wait_until(lambda: (log if "load_failed" in (log := cmd("logs", bad["pod"], check=False)) else None), 15)
         (folder / "bad-pod.jsonl").write_text(failure_log)

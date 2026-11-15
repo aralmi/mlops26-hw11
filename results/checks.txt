@@ -1,0 +1,11 @@
+test_1_warmup_and_graceful_streams (__main__.KubernetesAcceptance.test_1_warmup_and_graceful_streams)
+HTTP under A→B with both probe variants, correlated to EndpointSlice. ... ok
+test_2_invalid_b_and_actual_rollback_version (__main__.KubernetesAcceptance.test_2_invalid_b_and_actual_rollback_version) ... ok
+test_3_replacement_reloads_verified_version (__main__.KubernetesAcceptance.test_3_replacement_reloads_verified_version) ... ok
+test_4_distinguish_rejection_from_interrupted_stream (__main__.KubernetesAcceptance.test_4_distinguish_rejection_from_interrupted_stream) ... ok
+test_5_isolated_dialogues_with_explicit_history (__main__.KubernetesAcceptance.test_5_isolated_dialogues_with_explicit_history) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.007s
+
+OK

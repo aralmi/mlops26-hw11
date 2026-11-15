@@ -1,0 +1,10 @@
+{
+  "run": "sticky-uniform-2",
+  "outcome": {
+    "ok": 900
+  },
+  "by_pod": {
+    "hw11-api-6f48c9d6f-8c7zw": 450,
+    "hw11-api-6f48c9d6f-5kzqd": 450
+  }
+}

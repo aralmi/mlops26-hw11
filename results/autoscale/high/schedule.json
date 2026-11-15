@@ -1,0 +1,13 @@
+{
+  "run": "hpa-high",
+  "policy": "sticky",
+  "traffic": "skew",
+  "start_unix": 1794753851.5116212,
+  "duration_seconds": 105,
+  "rate": 13,
+  "chunks": 5,
+  "pace_ms": 16,
+  "url": "http://hw11-sticky:8080/generate",
+  "client_count": 4,
+  "connection_close": true
+}

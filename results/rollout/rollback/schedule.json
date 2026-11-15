@@ -1,0 +1,13 @@
+{
+  "run": "rollback",
+  "policy": "plain",
+  "traffic": "uniform",
+  "start_unix": 1794753735.522848,
+  "duration_seconds": 42,
+  "rate": 1.5,
+  "chunks": 4,
+  "pace_ms": 24,
+  "url": "http://hw11-plain:8080/generate",
+  "client_count": 4,
+  "connection_close": true
+}

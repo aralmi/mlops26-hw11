@@ -1,0 +1,13 @@
+{
+  "run": "sticky-skew-2",
+  "policy": "sticky",
+  "traffic": "skew",
+  "start_unix": 1794752353.338737,
+  "duration_seconds": 120,
+  "rate": 7.5,
+  "chunks": 4,
+  "pace_ms": 24,
+  "url": "http://hw11-sticky:8080/generate",
+  "client_count": 4,
+  "connection_close": true
+}

@@ -1,0 +1,139 @@
+{
+  "unix": 1794754145.945324,
+  "pods": [
+    {
+      "pod": "hw11-api-5f887645ff-fcs5g",
+      "ip": "10.244.0.57",
+      "uid": "fca6afc4-2784-4d9e-9863-43c189057f89",
+      "created": "2026-11-15T14:43:48Z",
+      "deleting": null,
+      "phase": "Running",
+      "ready": true,
+      "ready_transition": "2026-11-15T14:44:02Z",
+      "restarts": 0,
+      "requested_version": "A"
+    },
+    {
+      "pod": "hw11-api-5f887645ff-xfk5w",
+      "ip": "10.244.0.56",
+      "uid": "2355a0e4-5b99-4641-80d9-7c6e12d72573",
+      "created": "2026-11-15T14:43:33Z",
+      "deleting": null,
+      "phase": "Running",
+      "ready": true,
+      "ready_transition": "2026-11-15T14:43:47Z",
+      "restarts": 0,
+      "requested_version": "A"
+    }
+  ],
+  "endpoints": [
+    {
+      "pod": "hw11-api-5f887645ff-xfk5w",
+      "addresses": [
+        "10.244.0.56"
+      ],
+      "ready": true,
+      "serving": true,
+      "terminating": false
+    },
+    {
+      "pod": "hw11-api-5f887645ff-fcs5g",
+      "addresses": [
+        "10.244.0.57"
+      ],
+      "ready": true,
+      "serving": true,
+      "terminating": false
+    }
+  ],
+  "hpa": {
+    "conditions": [
+      {
+        "lastTransitionTime": "2026-11-15T14:43:48Z",
+        "message": "recommended size matches current size",
+        "reason": "ReadyForNewScale",
+        "status": "True",
+        "type": "AbleToScale"
+      },
+      {
+        "lastTransitionTime": "2026-11-15T14:44:33Z",
+        "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+        "reason": "ValidMetricFound",
+        "status": "True",
+        "type": "ScalingActive"
+      },
+      {
+        "lastTransitionTime": "2026-11-15T14:48:49Z",
+        "message": "the desired replica count is less than the minimum replica count",
+        "reason": "TooFewReplicas",
+        "status": "True",
+        "type": "ScalingLimited"
+      }
+    ],
+    "currentMetrics": [
+      {
+        "resource": {
+          "current": {
+            "averageUtilization": 5,
+            "averageValue": "5m"
+          },
+          "name": "cpu"
+        },
+        "type": "Resource"
+      }
+    ],
+    "currentReplicas": 2,
+    "desiredReplicas": 2,
+    "lastScaleTime": "2026-11-15T14:48:49Z"
+  },
+  "resource_metrics": [
+    {
+      "metadata": {
+        "name": "hw11-api-5f887645ff-fcs5g",
+        "namespace": "hw11",
+        "creationTimestamp": "2026-11-15T14:49:06Z",
+        "labels": {
+          "app": "hw11-api",
+          "pod-template-hash": "5f887645ff"
+        }
+      },
+      "timestamp": "2026-11-15T14:48:58Z",
+      "window": "18.352s",
+      "containers": [
+        {
+          "name": "api",
+          "usage": {
+            "cpu": "4424858n",
+            "memory": "35068Ki"
+          }
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "name": "hw11-api-5f887645ff-xfk5w",
+        "namespace": "hw11",
+        "creationTimestamp": "2026-11-15T14:49:06Z",
+        "labels": {
+          "app": "hw11-api",
+          "pod-template-hash": "5f887645ff"
+        }
+      },
+      "timestamp": "2026-11-15T14:48:48Z",
+      "window": "14.643s",
+      "containers": [
+        {
+          "name": "api",
+          "usage": {
+            "cpu": "5095881n",
+            "memory": "36320Ki"
+          }
+        }
+      ]
+    }
+  ],
+  "alerts": {
+    "Hw11HighTTFC": "inactive",
+    "Hw11HighRejectionRate": "inactive"
+  }
+}

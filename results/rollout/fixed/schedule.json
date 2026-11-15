@@ -1,0 +1,13 @@
+{
+  "run": "fixed",
+  "policy": "plain",
+  "traffic": "uniform",
+  "start_unix": 1794753623.160908,
+  "duration_seconds": 63,
+  "rate": 2,
+  "chunks": 4,
+  "pace_ms": 24,
+  "url": "http://hw11-plain:8080/generate",
+  "client_count": 4,
+  "connection_close": true
+}

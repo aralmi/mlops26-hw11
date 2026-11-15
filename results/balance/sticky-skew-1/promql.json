@@ -1,0 +1,402 @@
+{
+  "hw11_ttfc_seconds_bucket:buckets": {
+    "query": "sum by (le) (last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751887.040) - last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751754.677))",
+    "result": [
+      {
+        "metric": {
+          "le": "0.025"
+        },
+        "value": [
+          1794752133.089,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.05"
+        },
+        "value": [
+          1794752133.089,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.075"
+        },
+        "value": [
+          1794752133.089,
+          "44"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.1"
+        },
+        "value": [
+          1794752133.089,
+          "60"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.15"
+        },
+        "value": [
+          1794752133.089,
+          "61"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.2"
+        },
+        "value": [
+          1794752133.089,
+          "61"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.3"
+        },
+        "value": [
+          1794752133.089,
+          "63"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.4"
+        },
+        "value": [
+          1794752133.089,
+          "66"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.5"
+        },
+        "value": [
+          1794752133.089,
+          "67"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.75"
+        },
+        "value": [
+          1794752133.089,
+          "70"
+        ]
+      },
+      {
+        "metric": {
+          "le": "1.0"
+        },
+        "value": [
+          1794752133.089,
+          "73"
+        ]
+      },
+      {
+        "metric": {
+          "le": "1.5"
+        },
+        "value": [
+          1794752133.089,
+          "392"
+        ]
+      },
+      {
+        "metric": {
+          "le": "2.0"
+        },
+        "value": [
+          1794752133.089,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "3.0"
+        },
+        "value": [
+          1794752133.089,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "5.0"
+        },
+        "value": [
+          1794752133.089,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "8.0"
+        },
+        "value": [
+          1794752133.089,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "13.0"
+        },
+        "value": [
+          1794752133.089,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "21.0"
+        },
+        "value": [
+          1794752133.089,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "+Inf"
+        },
+        "value": [
+          1794752133.089,
+          "697"
+        ]
+      }
+    ]
+  },
+  "hw11_ttfc_seconds_bucket:p50": {
+    "query": "histogram_quantile(0.5, sum by (le) (last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751887.040) - last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751754.677)))",
+    "result": [
+      {
+        "metric": {},
+        "value": [
+          1794752133.487,
+          "1.4318181818181819"
+        ]
+      }
+    ]
+  },
+  "hw11_ttfc_seconds_bucket:p95": {
+    "query": "histogram_quantile(0.95, sum by (le) (last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751887.040) - last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751754.677)))",
+    "result": [
+      {
+        "metric": {},
+        "value": [
+          1794752133.886,
+          "1.9428688524590163"
+        ]
+      }
+    ]
+  },
+  "hw11_duration_seconds_bucket:buckets": {
+    "query": "sum by (le) (last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751887.474) - last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751755.081))",
+    "result": [
+      {
+        "metric": {
+          "le": "0.025"
+        },
+        "value": [
+          1794752134.284,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.05"
+        },
+        "value": [
+          1794752134.284,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.075"
+        },
+        "value": [
+          1794752134.284,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.1"
+        },
+        "value": [
+          1794752134.284,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.15"
+        },
+        "value": [
+          1794752134.284,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.2"
+        },
+        "value": [
+          1794752134.284,
+          "44"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.3"
+        },
+        "value": [
+          1794752134.284,
+          "61"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.4"
+        },
+        "value": [
+          1794752134.284,
+          "62"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.5"
+        },
+        "value": [
+          1794752134.284,
+          "65"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.75"
+        },
+        "value": [
+          1794752134.284,
+          "68"
+        ]
+      },
+      {
+        "metric": {
+          "le": "1.0"
+        },
+        "value": [
+          1794752134.284,
+          "71"
+        ]
+      },
+      {
+        "metric": {
+          "le": "1.5"
+        },
+        "value": [
+          1794752134.284,
+          "98"
+        ]
+      },
+      {
+        "metric": {
+          "le": "2.0"
+        },
+        "value": [
+          1794752134.284,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "3.0"
+        },
+        "value": [
+          1794752134.284,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "5.0"
+        },
+        "value": [
+          1794752134.284,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "8.0"
+        },
+        "value": [
+          1794752134.284,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "13.0"
+        },
+        "value": [
+          1794752134.284,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "21.0"
+        },
+        "value": [
+          1794752134.284,
+          "697"
+        ]
+      },
+      {
+        "metric": {
+          "le": "+Inf"
+        },
+        "value": [
+          1794752134.284,
+          "697"
+        ]
+      }
+    ]
+  },
+  "hw11_duration_seconds_bucket:p50": {
+    "query": "histogram_quantile(0.5, sum by (le) (last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751887.474) - last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751755.081)))",
+    "result": [
+      {
+        "metric": {},
+        "value": [
+          1794752134.681,
+          "1.7090984974958263"
+        ]
+      }
+    ]
+  },
+  "hw11_duration_seconds_bucket:p95": {
+    "query": "histogram_quantile(0.95, sum by (le) (last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751887.474) - last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-f6b997556-b78m7|hw11-api-f6b997556-mr7fc\"}[15s] @ 1794751755.081)))",
+    "result": [
+      {
+        "metric": {},
+        "value": [
+          1794752135.081,
+          "1.9709098497495825"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "run": "plain-skew-3",
+  "policy": "plain",
+  "traffic": "skew",
+  "start_unix": 1794753096.1813068,
+  "duration_seconds": 120,
+  "rate": 7.5,
+  "chunks": 4,
+  "pace_ms": 24,
+  "url": "http://hw11-plain:8080/generate",
+  "client_count": 4,
+  "connection_close": true
+}

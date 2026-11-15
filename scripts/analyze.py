@@ -46,8 +46,8 @@ def aggregate(rows):
                 inter_chunk=metric([{"seconds": v} for r in ok for v in r["inter_chunk_seconds"]], "seconds"))
 
 
-def per_pod(rows):
-    groups = collections.defaultdict(list)
+def per_pod(rows, expected_pods=()):
+    groups = collections.defaultdict(list, ((pod, []) for pod in expected_pods))
     for r in rows:
         groups[r["pod"] or "unknown"].append(r)
     return {pod: aggregate(group) for pod,group in sorted(groups.items())}
@@ -70,7 +70,9 @@ def balance_data():
         matrix = collections.defaultdict(collections.Counter)
         for r in rows:
             matrix[r["client_ip"]][r["pod"] or "unknown"] += 1
-        result = dict(schedule=meta, stats=aggregate(rows), pod=per_pod(rows), clients=dict(clients),
+        pods = read(folder / "histograms.json")["pods"]
+        ready = [p["pod"] for p in pods if p["ready"] and not p["deleting"]]
+        result = dict(schedule=meta, stats=aggregate(rows), pod=per_pod(rows, ready), clients=dict(clients),
                       routes={client:dict(counts) for client,counts in matrix.items()},
                       source_ip_matches=sum(r["client_ip"] == r["source_ip"] for r in good),
                       first_sent=min(r["sent_unix"] for r in rows if r["sent_unix"]),
@@ -134,7 +136,7 @@ def autoscale_data():
     hot_when_three = per_pod([r for r in high if after3 and r["sent_unix"] and r["sent_unix"] > after3["unix"]])
     return dict(result=read(root/"result.json"), events=stream(root/"events.jsonl"),
                 high=aggregate(high), low=aggregate(low), high_pods=per_pod(high), after_three=hot_when_three,
-                high_start=start, low_start=low_start, scale_up=desired3, third_ready=after3["unix"] if after3 else None,
+                high_start=start, low_start=low_start, low_end=max(r["end_unix"] for r in low), scale_up=desired3, third_ready=after3["unix"] if after3 else None,
                 third=new, scale_down=return2, alerts=dict(alerts),
                 stabilization=configuration["spec"]["behavior"]["scaleDown"]["stabilizationWindowSeconds"]), high+low
 
@@ -149,7 +151,7 @@ def main():
               "status","pod","version","chunks","done","outcome","backend_mode","queue_seconds","ttfc_seconds",
               "total_seconds","send_lag_seconds","inter_chunk_seconds","cache_hit","artifact_sha256","error")
     with (RESULTS/"requests.csv").open("w", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=fields, extrasaction="ignore")
+        writer = csv.DictWriter(file, fieldnames=fields, extrasaction="ignore", lineterminator="\n")
         writer.writeheader()
         for row in a+b+c:
             writer.writerow(row)

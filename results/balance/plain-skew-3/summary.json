@@ -1,0 +1,10 @@
+{
+  "run": "plain-skew-3",
+  "outcome": {
+    "ok": 900
+  },
+  "by_pod": {
+    "hw11-api-79f5564f5f-bhlcw": 460,
+    "hw11-api-79f5564f5f-z9gc6": 440
+  }
+}

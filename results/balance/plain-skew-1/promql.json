@@ -1,0 +1,402 @@
+{
+  "hw11_ttfc_seconds_bucket:buckets": {
+    "query": "sum by (le) (last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794752034.734) - last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794751903.728))",
+    "result": [
+      {
+        "metric": {
+          "le": "0.025"
+        },
+        "value": [
+          1794752130.668,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.05"
+        },
+        "value": [
+          1794752130.668,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.075"
+        },
+        "value": [
+          1794752130.668,
+          "359"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.1"
+        },
+        "value": [
+          1794752130.668,
+          "388"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.15"
+        },
+        "value": [
+          1794752130.668,
+          "612"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.2"
+        },
+        "value": [
+          1794752130.668,
+          "740"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.3"
+        },
+        "value": [
+          1794752130.668,
+          "854"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.4"
+        },
+        "value": [
+          1794752130.668,
+          "888"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.5"
+        },
+        "value": [
+          1794752130.668,
+          "895"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.75"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "1.0"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "1.5"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "2.0"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "3.0"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "5.0"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "8.0"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "13.0"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "21.0"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "+Inf"
+        },
+        "value": [
+          1794752130.668,
+          "900"
+        ]
+      }
+    ]
+  },
+  "hw11_ttfc_seconds_bucket:p50": {
+    "query": "histogram_quantile(0.5, sum by (le) (last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794752034.734) - last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794751903.728)))",
+    "result": [
+      {
+        "metric": {},
+        "value": [
+          1794752131.072,
+          "0.11383928571428571"
+        ]
+      }
+    ]
+  },
+  "hw11_ttfc_seconds_bucket:p95": {
+    "query": "histogram_quantile(0.95, sum by (le) (last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794752034.734) - last_over_time(hw11_ttfc_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794751903.728)))",
+    "result": [
+      {
+        "metric": {},
+        "value": [
+          1794752131.481,
+          "0.3029411764705881"
+        ]
+      }
+    ]
+  },
+  "hw11_duration_seconds_bucket:buckets": {
+    "query": "sum by (le) (last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794752035.159) - last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794751904.181))",
+    "result": [
+      {
+        "metric": {
+          "le": "0.025"
+        },
+        "value": [
+          1794752131.875,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.05"
+        },
+        "value": [
+          1794752131.875,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.075"
+        },
+        "value": [
+          1794752131.875,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.1"
+        },
+        "value": [
+          1794752131.875,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.15"
+        },
+        "value": [
+          1794752131.875,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.2"
+        },
+        "value": [
+          1794752131.875,
+          "352"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.3"
+        },
+        "value": [
+          1794752131.875,
+          "680"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.4"
+        },
+        "value": [
+          1794752131.875,
+          "829"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.5"
+        },
+        "value": [
+          1794752131.875,
+          "880"
+        ]
+      },
+      {
+        "metric": {
+          "le": "0.75"
+        },
+        "value": [
+          1794752131.875,
+          "899"
+        ]
+      },
+      {
+        "metric": {
+          "le": "1.0"
+        },
+        "value": [
+          1794752131.875,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "1.5"
+        },
+        "value": [
+          1794752131.875,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "2.0"
+        },
+        "value": [
+          1794752131.875,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "3.0"
+        },
+        "value": [
+          1794752131.875,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "5.0"
+        },
+        "value": [
+          1794752131.875,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "8.0"
+        },
+        "value": [
+          1794752131.875,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "13.0"
+        },
+        "value": [
+          1794752131.875,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "21.0"
+        },
+        "value": [
+          1794752131.875,
+          "900"
+        ]
+      },
+      {
+        "metric": {
+          "le": "+Inf"
+        },
+        "value": [
+          1794752131.875,
+          "900"
+        ]
+      }
+    ]
+  },
+  "hw11_duration_seconds_bucket:p50": {
+    "query": "histogram_quantile(0.5, sum by (le) (last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794752035.159) - last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794751904.181)))",
+    "result": [
+      {
+        "metric": {},
+        "value": [
+          1794752132.279,
+          "0.22987804878048781"
+        ]
+      }
+    ]
+  },
+  "hw11_duration_seconds_bucket:p95": {
+    "query": "histogram_quantile(0.95, sum by (le) (last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794752035.159) - last_over_time(hw11_duration_seconds_bucket{job=\"hw11-api\",pod=~\"hw11-api-5bcdff97c4-fb9ml|hw11-api-5bcdff97c4-gck6w\"}[15s] @ 1794751904.181)))",
+    "result": [
+      {
+        "metric": {},
+        "value": [
+          1794752132.687,
+          "0.4509803921568627"
+        ]
+      }
+    ]
+  }
+}

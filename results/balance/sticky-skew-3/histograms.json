@@ -1,0 +1,3297 @@
+{
+  "before": {
+    "hw11_ttfc_seconds_bucket": [
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "3"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "4"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "5"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "8"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "11"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "146"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "624"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "624"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "624"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "624"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "624"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "624"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.34:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-566fcc695c-dxdkp"
+        },
+        "value": [
+          1794752940.695,
+          "624"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752940.695,
+          "0"
+        ]
+      }
+    ],
+    "hw11_duration_seconds_bucket": [
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.154,
+          "0"
+        ]
+      }
+    ],
+    "hw11_requests_total": [
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "outcome": "ok",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "outcome": "rejected",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "outcome": "invalid",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "outcome": "unready",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "outcome": "aborted",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "outcome": "error",
+          "pod": "hw11-api-566fcc695c-nm6v2"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "ok",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "rejected",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "invalid",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "unready",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "aborted",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "error",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "ok",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "rejected",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "invalid",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "unready",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "aborted",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "error",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794752941.567,
+          "0"
+        ]
+      }
+    ],
+    "hw11_prefix_total": [
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-566fcc695c-nm6v2",
+          "result": "hit"
+        },
+        "value": [
+          1794752941.974,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.33:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-566fcc695c-nm6v2",
+          "result": "miss"
+        },
+        "value": [
+          1794752941.974,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-686c6f7b75-chgqn",
+          "result": "hit"
+        },
+        "value": [
+          1794752941.974,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-686c6f7b75-chgqn",
+          "result": "miss"
+        },
+        "value": [
+          1794752941.974,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-686c6f7b75-6x8sm",
+          "result": "hit"
+        },
+        "value": [
+          1794752941.974,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-686c6f7b75-6x8sm",
+          "result": "miss"
+        },
+        "value": [
+          1794752941.974,
+          "0"
+        ]
+      }
+    ]
+  },
+  "after": {
+    "hw11_ttfc_seconds_bucket": [
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "2"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "4"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "5"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "7"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "10"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "69"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_ttfc_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.081,
+          "618"
+        ]
+      }
+    ],
+    "hw11_duration_seconds_bucket": [
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.025",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.05",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.075",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.1",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.15",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.2",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.3",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.4",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "2"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.5",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "3"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "0.75",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "6"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "1.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "9"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "1.5",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "15"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "2.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "3.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "5.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "8.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "13.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "21.0",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_duration_seconds_bucket",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "le": "+Inf",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.508,
+          "618"
+        ]
+      }
+    ],
+    "hw11_requests_total": [
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "ok",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "rejected",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "invalid",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "unready",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "aborted",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "outcome": "error",
+          "pod": "hw11-api-686c6f7b75-chgqn"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "ok",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.999,
+          "618"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "rejected",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.999,
+          "282"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "invalid",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "unready",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "aborted",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_requests_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "outcome": "error",
+          "pod": "hw11-api-686c6f7b75-6x8sm"
+        },
+        "value": [
+          1794753073.999,
+          "0"
+        ]
+      }
+    ],
+    "hw11_prefix_total": [
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-686c6f7b75-chgqn",
+          "result": "hit"
+        },
+        "value": [
+          1794753074.463,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.35:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-686c6f7b75-chgqn",
+          "result": "miss"
+        },
+        "value": [
+          1794753074.463,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-686c6f7b75-6x8sm",
+          "result": "hit"
+        },
+        "value": [
+          1794753074.463,
+          "602"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "hw11_prefix_total",
+          "instance": "10.244.0.36:8080",
+          "job": "hw11-api",
+          "pod": "hw11-api-686c6f7b75-6x8sm",
+          "result": "miss"
+        },
+        "value": [
+          1794753074.463,
+          "16"
+        ]
+      }
+    ]
+  },
+  "pods": [
+    {
+      "pod": "hw11-api-566fcc695c-nm6v2",
+      "ip": "10.244.0.33",
+      "uid": "3914fbd7-ddfa-4b84-aa9b-b1949c5c6134",
+      "created": "2026-11-15T14:26:16Z",
+      "deleting": "2026-11-15T14:29:31Z",
+      "phase": "Running",
+      "ready": true,
+      "ready_transition": "2026-11-15T14:26:21Z",
+      "restarts": 0,
+      "requested_version": "A"
+    },
+    {
+      "pod": "hw11-api-686c6f7b75-6x8sm",
+      "ip": "10.244.0.36",
+      "uid": "5c6a6d04-eac3-4139-836a-039d87f51d1d",
+      "created": "2026-11-15T14:28:50Z",
+      "deleting": null,
+      "phase": "Running",
+      "ready": true,
+      "ready_transition": "2026-11-15T14:28:56Z",
+      "restarts": 0,
+      "requested_version": "A"
+    },
+    {
+      "pod": "hw11-api-686c6f7b75-chgqn",
+      "ip": "10.244.0.35",
+      "uid": "2eae02d9-73a5-4fc6-bceb-13b7b7b3b9e1",
+      "created": "2026-11-15T14:28:45Z",
+      "deleting": null,
+      "phase": "Running",
+      "ready": true,
+      "ready_transition": "2026-11-15T14:28:50Z",
+      "restarts": 0,
+      "requested_version": "A"
+    }
+  ]
+}

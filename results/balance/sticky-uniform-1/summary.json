@@ -1,0 +1,11 @@
+{
+  "run": "sticky-uniform-1",
+  "outcome": {
+    "ok": 861,
+    "rejected": 39
+  },
+  "by_pod": {
+    "hw11-api-76958df9cc-sgdg6": 225,
+    "hw11-api-76958df9cc-4fd5b": 675
+  }
+}
