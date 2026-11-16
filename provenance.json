@@ -2,5 +2,5 @@
   "previous_repository": "https://github.com/aralmi/mlops26-hw8-9-10",
   "previous_commit": "5ee53dcc1661ceb51d9a4dabc3154270738d34d6",
   "previous_interface": "api.py: /health, /ready, /generate; api_core.py: warmup, validation, loaded model identity",
-  "lecture": {"file": "lecture11-extended.mp4", "slide": 70, "observed_at": "08:14", "topic": "GKE Inference Gateway", "source": "https://cloud.google.com/blog/products/containers-kubernetes/how-gke-inference-gateway-improved-latency-for-vertex-ai"}
+  "lecture": {"topic": "GKE Inference Gateway", "source": "https://cloud.google.com/blog/products/containers-kubernetes/how-gke-inference-gateway-improved-latency-for-vertex-ai"}
 }
